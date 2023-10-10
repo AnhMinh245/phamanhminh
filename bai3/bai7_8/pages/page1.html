@@ -1,0 +1,32 @@
+<head>
+	<title>Trang 1</title>
+	<style>
+		img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+
+</head>
+
+<section style="font-size:160%;">
+    <h1 style="font-size:160%; text-align:center;">Ảnh kỹ thuật số (Digital Image), điểm ảnh (Pixel)</h1>
+	<p>Theo wikipedia, một pixel hay một điểm ảnh là một khối màu rất nhỏ và là đơn vị cơ bản nhất để tạo nên một bức ảnh kỹ thuật số. Mỗi một điểm ảnh chỉ biểu diễn một màu duy nhất, kết hợp các điểm ảnh sẽ tạo nên một bức ảnh hoàn chỉnh.</p>
+	<p>Màu mà điểm ảnh biểu diễn phụ thuộc vào số lượng bit dùng để lưu trữ điểm ảnh đó. Nếu sử dụng <b>n bit để lưu trữ</b>, một điểm ảnh có thể <b>biểu diễn 2<sup>n</sup> màu</b> riêng biệt.</p>
+	<p>Ví dụ 1: Ảnh nhị phân. Vì sử dụng <b>2 bit</b> để lưu trữ, nên điểm ảnh chỉ có thể biểu diễn hai màu là: đen và trắng. Dùng bit 0 cho màu đen, bit 1 cho màu trắng hoặc ngược lại.</p>
+	<img src="../img/san_binary.png" />
+	
+	<p>Ví dụ 2: Ảnh Đa mức xám (Grayscale). Vì sử dụng <b>8 bit</b> để lưu trữ, nên điểm ảnh biểu diễn được <b>2<sup>8</sup> = 256 màu</b>, có giá trị trong [0, 255].</p>
+	<img src="../img/grayscale_bar.png" /> 
+	<img src="../img/grayscale_bird.png" />
+	
+	<p>Ví dụ 3: Ảnh màu (Red-Green-Blue; RGB). Vì sử dụng <b>24 bit</b> để lưu trữ, nên số màu mà điểm ảnh biểu diễn được là <b>2<sup>24</sup> = 16777216 màu</b>, có giá trị trong [0, 16777215].</p>
+	<img src="../img/RGB_circle.png" />
+	
+	<p>Điểm ảnh RGB được lưu trữ như sau: Chia <b>24 bit</b> thành ba đoạn, mỗi đoạn dài <b>8 bit</b> và biểu diễn cho một tông màu nhất định. Với bit thứ 0 thuộc về màu xanh dương và bit thứ 23 thuộc về màu đỏ. Ba màu riêng biệt, mỗi màu có <b>2<sup>8</sup> = 256 mức sáng</b>, chúng kết hợp với nhau tạo nên 256<sup>3</sup> = 16777216 màu.</p>
+	<img src="../img/24_bit_distribute.png" />
+	<p>Với các mức sáng ngẫu nhiên của <b>Red-Green-Blue</b>, chúng kết hợp với nhau tạo nên các màu khác biệt.</p>
+	<img src="../img/RGB_example_1.png" />
+	
+</section>

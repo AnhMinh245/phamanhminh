@@ -1,0 +1,66 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/bai7_5.css">
+	</head>
+	<body>
+			<label id="mot">Họ tên:</label>
+			<input type="text" id="hoten" class="textbox" onblur="nameCorrection()"/>
+			<span></span><br/><br/>
+			
+			<label id="hai">Địa chỉ:</label>
+			<input type="text" id="diachi" class="textbox"/>
+			<span></span><br/><br/>
+			
+			<label id="ba">Giới tính:</label>
+			<input type="radio" id="male" name="gioitinh" value="Nam"/>
+			<label for="male">Nam</label>
+			<input type="radio" id="female" name="gioitinh" value="Nu"/>
+			<label for="female">Nữ</label>
+			<span></span><br/><br/>
+			
+			<label id="bon">Ngày sinh:</label>
+			<input type="text" id="ngaysinh" class="textbox" style="color:rgb(111,111,111);"/>
+			<span></span><br/><br/>
+		
+			<label id="nam">E-mail:</label>
+			<input type="text" id="email" class="textbox" onblur="emailcheck(document.getElementById('email'))"/>
+			<span id="email_span"></span><br/><br/>
+		
+			<label id="sau">Điện thoại:</label>
+			<input type="text" id="dienthoai" class="textbox" onblur="phonecheck(document.getElementById('dienthoai'))"/>
+			<span id="dienthoai_span"></span><br/><br/>
+			
+			<label id="bay">Khóa đăng ký:</label>
+			<input type="checkbox" id="tienganh" name="khoadangky1" value="tienganh"/>
+			<label for="tienganh">Tiếng Anh</label>
+			<input type="checkbox" id="quantri" name="khoadangky2" value="quantri"/>
+			<label for="quantri">Quản trị</label>
+			<input type="checkbox" id="cntt" name="khoadangky3"/>
+			<label for="cntt">CNTT</label>
+			<span></span><br/><br/>
+			
+			<label id="tam">Tên sử dụng:</label>
+			<input type="text" id="tensudung" class="textbox"/>
+			<span></span><br/><br/>
+			
+			<label id="chin">Mật khẩu:</label>
+			<input type="text" id="matkhau" class="textbox"/>
+			<span></span><br/><br/>
+			
+			<label id="muoi">Gõ lại mật khẩu:</label>
+			<input type="text" id="golaimatkhau" class="textbox"/>
+			<span></span><br/><br/>
+			
+			<label id="muoimot">Ghi chú:</label>
+			<textarea rows="5" cols="25" class="textbox"></textarea>
+			<span></span><br/><br/>
+			
+			<input type="button" id="chapnhan" value="Chấp nhận" style="margin-left:150px;"/>
+			<input type="button" id="boqua" value="Bỏ qua" />
+			
+			<script src="js/bai7_5.js"></script>
+			
+			
+	</body>
+</html>

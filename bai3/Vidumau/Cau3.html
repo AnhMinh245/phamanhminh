@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" 
+		content="text/html;">
+		<title>Câu 3</title>
+		<script language=javascript>
+			function chay(){
+				var a;
+				a=window.document.bai1.T1.value*1;
+				if ((a%2)==0){
+					alert(a+ " la so chan ");
+				}
+				else{
+					alert(a+" la so le ");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form name=bai1>
+			<input type=text name=T1>
+			<input type=button name=c value="chay thu" onclick="chay()">
+		</form>
+	</body>
+</html>

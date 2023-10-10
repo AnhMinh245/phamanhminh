@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<style>
+			ul, #myUL {
+				list-style-type:none;
+			}
+			
+			img {
+				content: url(images/folder_icon.png);
+			}
+			
+			.caret::before {
+			  content: "\229E";
+			  margin-left: -16px;
+			}
+
+			.caret-down::before {
+			  content: "\229F";  
+			}
+			
+			.nested {
+			  display: none;
+			}
+			
+			.active {
+			  display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="myUL">
+			<li><span class="caret"><img/>Root</span>
+				<ul class="nested">
+					<li><img/>Folder 1</li>
+					<li><span class="caret"><img/>Folder 2</span>
+						<ul class="nested">
+							<li><img/>Folder 2-1</li>
+							<li><span class="caret"><img/>Folder 2-2</span>
+								<ul class="nested">
+									<li><img/>Folder 2-2-1</li>
+									<li><img/>Folder 2-2-2</li>
+								</ul>
+							</li>
+							<li><img/>Folder 2-3</li>
+						</ul>
+					</li>
+					<li><img/>Folder 3</li>
+					<li><span class="caret"><img/>Folder 4</span>
+						<ul class="nested">
+							<li><img/>Folder 4-1</li>
+							<li><img/>Folder 4-2</li>
+						</ul>
+					</li>
+					<li><img/>Folder 5</li>
+				</ul>
+			</li>
+		</ul>
+		
+		<script>
+		const caret_list = document.getElementsByClassName("caret");
+
+		for ( let i = 0; i < caret_list.length; i++) {
+		  caret_list[i].addEventListener("click", function() {
+			this.parentElement.querySelector(".nested").classList.toggle("active");
+			this.classList.toggle("caret-down");
+		  });
+		}
+		</script>
+
+	</body>
+</html>

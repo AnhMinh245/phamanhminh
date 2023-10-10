@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Thiết kế form nhập liệu cho table HOSO, xây dựng các đoạn JS kiểm tra dữ liệu đầu -->
+    <!-- vào -->
+    <form action="" method="post">
+        <fieldset>
+            <legend>Nhập thông tin hồ sơ</legend>
+            <p>Mã hồ sơ</p>
+            <input type="text" name="mahoso" id="mahoso">
+            <p>Họ tên</p>
+            <input type="text" name="hoten" id="hoten">
+            <p>Ngày sinh</p>
+            <input type="text" name="ngaysinh" id="ngaysinh">
+            <p>Địa chỉ</p>
+            <input type="text" name="diachi" id="diachi">
+            <p>Mã lớp</p>
+            <input type="text" name="malop" id="malop">
+            <p>Điểm toán</p>
+            <input type="text" name="diemtoan" id="diemtoan">
+            <p>Điểm lý</p>
+            <input type="text" name="diemly" id="diemly">
+            <p>Điểm hóa</p>
+            <input type="text" name="diemhoa" id="diemhoa">
+        </fieldset>
+        <button type="submit" onclick="kiemtra()">Thêm</button>
+    </form>
+
+    <script type="text/javascript">
+        function kiemtra() {
+            var mahoso = document.getElementById("mahoso").value;
+            var hoten = document.getElementById("hoten").value;
+            var ngaysinh = document.getElementById("ngaysinh").value;
+            var diachi = document.getElementById("diachi").value;
+            var malop = document.getElementById("malop").value;
+            var diemtoan = document.getElementById("diemtoan").value;
+            var diemly = document.getElementById("diemly").value;
+            var diemhoa = document.getElementById("diemhoa").value;
+
+            if (mahoso == "") {
+                alert("Mã hồ sơ không được để trống");
+                return false;
+            }
+            if (hoten == "") {
+                alert("Họ tên không được để trống");
+                return false;
+            }
+            if (ngaysinh == "") {
+                alert("Ngày sinh không được để trống");
+                return false;
+            }
+            if (diachi == "") {
+                alert("Địa chỉ không được để trống");
+                return false;
+            }
+            if (malop == "") {
+                alert("Mã lớp không được để trống");
+                return false;
+            }
+            if (diemtoan == "") {
+                alert("Điểm toán không được để trống");
+                return false;
+            }
+            if (diemly == "") {
+                alert("Điểm lý không được để trống");
+                return false;
+            }
+            if (diemhoa == "") {
+                alert("Điểm hóa không được để trống");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

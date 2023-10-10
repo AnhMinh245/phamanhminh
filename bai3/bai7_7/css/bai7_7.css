@@ -1,0 +1,19 @@
+#left, #right{
+	float:left;
+	display:block;
+}
+
+#left span{
+	background-color:lightgray;
+	display:block;
+	padding:5px;
+	font-size:20px;
+	border: 3px outset lightgray;
+}
+
+#right span{
+	display:block;
+	margin-left:10px;
+	font-size:14px;
+	color:blue;
+}

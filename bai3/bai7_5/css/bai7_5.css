@@ -1,0 +1,14 @@
+#mot, #hai, #ba, #bon, #nam, #sau, #bay, #tam, #chin, #muoi, #muoimot{
+	display:block;
+	float:left;
+	width:150px;
+}
+
+#hoten, #ngaysinh, #email, #tensudung, #matkhau, #golaimatkhau {
+	float:left;
+	background-color:rgb(7,252,250);
+}
+
+span{
+	margin-left:10px;
+}

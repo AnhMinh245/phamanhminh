@@ -1,0 +1,47 @@
+<!DOCTYPE html><html><head>
+	<meta charset="UTF-8">
+    <link rel="StyleSheet" type="text/css" href="css/bai.css"/>
+</head><body>
+<section id="body">
+<div class="row">
+    <button id="btn1">Sắp xếp theo tên sản phẩm</button>
+    <label></label>
+    <label><input type="text" id="myInput" placeholder="Nhập các từ cần tìm" onkeyup="searchTableByName()" ></label> 
+</div>
+<br></br>
+<table class="sortable" id="data_table" ><thead>
+    <tr>
+        <th>TT</th>
+        <th class="sortcol">Mã sản phẩm </th>
+        <th class="sortcol">Tên sản phẩm </th>
+    </tr>
+</thead><tbody>
+        <tr>
+            <td>1</td>
+            <td>SP001</td>
+            <td>Máy giặt</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>SP002</td>
+            <td>Bếp đa năng</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>SP003</td>
+            <td>Lò sưởi</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>SP004</td>
+            <td>Điều hòa nhiệt độ</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>SP005</td>
+            <td>Tủ lạnh</td>
+        </tr>
+</tbody></table>
+</section>
+<script src="js/bai.js"></script>
+</body></html>

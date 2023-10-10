@@ -1,0 +1,39 @@
+table.sortable  {
+	border-collapse: collapse;
+}
+
+table.sortable td {
+	border: solid 1px #000000;
+}
+
+table.sortable th {
+	background-color: #cccccc;
+	border: solid 1px #000000;
+}
+
+table.sortable th.sortcol {
+	cursor:pointer;
+}
+
+table.sortable th.sortcol span.arrow::after {
+	content: "\2195";
+}
+
+table.sortable th.asc span.arrow::after {
+	content: "\2191";
+    background-color: rgb(168, 168, 168);
+    color: rgb(0, 4, 255);
+    font-weight: bold;
+}
+
+table.sortable th.desc span.arrow::after {
+	content: "\2193";
+    background-color: rgb(168, 168, 168);
+    color: rgb(0, 4, 255);
+    font-weight: bold;
+}
+
+mark {
+    padding: 0px;
+    background-color: rgb(235, 240, 70);
+}

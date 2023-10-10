@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <style>
         * {
             box-sizing: border-box;
@@ -255,13 +255,13 @@
 
     <div class="topnav">
         <ul>
-            <li><a href="index.html" style="float:left; padding-left: 20px;">Trang
+            <li><a href="../../index.html" style="float:left; padding-left: 20px;">Trang
                     chủ</a></li>
-            <li><a href="#">Tổng hợp</a></li>
-            <li><a href="#">Khai thác lỗ hổng Web</a></li>
-            <li><a href="#" style="background-color: #f1f1f1; color:#333">PHP và CSDL</a></li>
-            <li><a href="#">Javascript</a></li>
-            <li><a href="#">HTML và CSS</a></li>
+            <li><a href="../../index.html#bt6">Tổng hợp</a></li>
+            <li><a href="../../index.html#bt5">Khai thác lỗ hổng Web</a></li>
+            <li><a href="../../index.html#bt4" style="background-color: #f1f1f1; color:#333">PHP và CSDL</a></li>
+            <li><a href="../../index.html#bt3">Javascript</a></li>
+            <li><a href="../../index.html#bt2">HTML và CSS</a></li>
         </ul>
     </div>
     <!-- _________________________________________________________________________________ -->

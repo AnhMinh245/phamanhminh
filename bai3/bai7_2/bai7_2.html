@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Viết trang kiểm tra thi trắc nghiệm gồm nhiều thể loại -->
+    <form action="" method="post">
+        <fieldset>
+            <legend>Thi trắc nghiệm</legend>
+            <p>1. Câu hỏi 1</p>
+            <input type="radio" name="1" value="A">A
+            <input type="radio" name="1" value="B">B
+            <input type="radio" name="1" value="C">C
+            <input type="radio" name="1" value="D">D
+            <p>2. Câu hỏi 2</p>
+            <input type="radio" name="2" value="A">A
+            <input type="radio" name="2" value="B">B
+            <input type="radio" name="2" value="C">C
+            <input type="radio" name="2" value="D">D
+            <p>3. Câu hỏi 3</p>
+            <input type="radio" name="3" value="A">A
+            <input type="radio" name="3" value="B">B
+            <input type="radio" name="3" value="C">C
+            <input type="radio" name="3" value="D">D
+            <p>4. Câu hỏi 4</p>
+            <input type="radio" name="4" value="A">A
+            <input type="radio" name="4" value="B">B
+            <input type="radio" name="4" value="C">C
+            <input type="radio" name="4" value="D">D
+            <p>5. Câu hỏi 5</p>
+            <input type="radio" name="5" value="A">A
+            <input type="radio" name="5" value="B">B
+            <input type="radio" name="5" value="C">C
+            <input type="radio" name="5" value="D">D
+            <p>6. Câu hỏi 6</p>
+            <input type="radio" name="6" value="A">A
+            <input type="radio" name="6" value="B">B
+            <input type="radio" name="6" value="C">C
+            <input type="radio" name="6" value="D">D
+        </fieldset>
+        <button type="submit" onclick="nopbai()">Nộp bài</button>
+    </form>
+
+    <script type="text/javascript">
+        function nopbai() {
+            var a = document.getElementsByName("1");
+            var b = document.getElementsByName("2");
+            var c = document.getElementsByName("3");
+            var d = document.getElementsByName("4");
+            var e = document.getElementsByName("5");
+            var f = document.getElementsByName("6");
+            var diem = 0;
+            for (var i = 0; i < a.length; i++) {
+                if (a[i].checked) {
+                    if (a[i].value == "A") {
+                        diem++;
+                    }
+                }
+            }
+            for (var i = 0; i < b.length; i++) {
+                if (b[i].checked) {
+                    if (b[i].value == "B") {
+                        diem++;
+                    }
+                }
+            }
+            for (var i = 0; i < c.length; i++) {
+                if (c[i].checked) {
+                    if (c[i].value == "C") {
+                        diem++;
+                    }
+                }
+            }
+            for (var i = 0; i < d.length; i++) {
+                if (d[i].checked) {
+                    if (d[i].value == "D") {
+                        diem++;
+                    }
+                }
+            }
+            for (var i = 0; i < e.length; i++) {
+                if (e[i].checked) {
+                    if (e[i].value == "A") {
+                        diem++;
+                    }
+                }
+            }
+            for (var i = 0; i < f.length; i++) {
+                if (f[i].checked) {
+                    if (f[i].value == "B") {
+                        diem++;
+                    }
+                }
+            }
+            alert("Bạn đã trả lời đúng " + diem + " câu");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<script language="JavaScript">
+			var phone=new Array();
+			phone["lam"] ="090540468";
+			phone["duc"] ="0905274747";
+			phone["thinh"] ="0904909086";
+			phone["hien"] ="0905146560";
+			phone["daotao"] ="05113519929";
+			function disphone(thephone,entry){
+				var num=thephone[entry];
+				window.document.myform.numbox.value=num;
+			}
+		</script>
+	</head>
+	<body>
+		<form name ="myform">
+			<select
+			onChange="disphone(phone,this.options[this.selectedIndex].value);">
+				<option value="lam"> Lê Thanh Lâm
+				<option value="duc"> Nguyễn đinh minh Đức
+				<option value="thinh"> Trần Văn thịnh
+				<option value="hien"> Đỗ Thế Hiền
+				<option value="daotao"> Phòng Đào tạo
+			</select>
+			<input type="text" name="numbox" value="" disabled />
+		</form>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+#mot, #hai, #ba, #bon{
+	display:block;
+	float:left;
+	width:100px;
+}
+
+#malop, #tenlop, #khoahoc, #gvcn {
+	float:left;
+}
+
+span{
+	margin-left:10px;
+}
