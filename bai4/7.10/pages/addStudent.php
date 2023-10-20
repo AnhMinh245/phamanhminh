@@ -1,6 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
+    $name = $_POST["msv"];
     $age = $_POST["age"];
     $email = $_POST["email"];
 
@@ -28,6 +29,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form method="post">
         <label for="name">Họ và Tên:</label>
         <input type="text" id="name" name="name" required><br><br>
+
+        <label for="msv">MSV</label>
+        <input type="text" id="msv" name="msv" required><br><br>
 
         <label for="age">Tuổi:</label>
         <input type="number" id="age" name="age" required><br><br>

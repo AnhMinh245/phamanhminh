@@ -15,9 +15,10 @@
         echo "<tr><th>Họ và Tên</th><th>Tuổi</th><th>Email</th></tr>";
 
         foreach ($students as $student) {
-            list($name, $age, $email) = explode("|", $student);
+            list($name, $msv, $age, $email) = explode("|", $student);
             echo "<tr>";
             echo "<td>$name</td>";
+            echo "<td>$msv</td>";
             echo "<td>$age</td>";
             echo "<td>$email</td>";
             echo "</tr>";
